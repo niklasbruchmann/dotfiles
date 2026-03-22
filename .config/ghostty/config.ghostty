@@ -1,0 +1,15 @@
+keybind = ctrl+shift+h=new_split:left
+keybind = ctrl+shift+j=new_split:down
+keybind = ctrl+shift+k=new_split:up
+keybind = ctrl+shift+l=new_split:right
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:bottom
+keybind = ctrl+k=goto_split:top
+keybind = ctrl+l=goto_split:right
+keybind = cmd+shift+n=new_tab
+keybind = cmd+shift+h=previous_tab
+keybind = cmd+shift+l=next_tab
+theme = tokyonight
+font-family = "BlexMono Nerd Font"
+window-inherit-working-directory = true
+working-directory = inherit
