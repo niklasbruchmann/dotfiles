@@ -4,9 +4,10 @@ export CARGO_NET_GIT_FETCH_WITH_CLI=true
 # alias
 alias gst="git status"
 alias ga="git add"
-alias gc="git commit"
+alias gc="git commit -v"
 alias gl="git pull"
 alias gp="git push"
+alias gf="git fetch"
 alias l="ls -alh"
 alias cr="cargo run"
 alias cw="cargo watch -x run"
