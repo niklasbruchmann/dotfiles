@@ -8,28 +8,126 @@ $git_branch\
 $git_state\
 $git_status\
 $line_break\
-$character"""
+$character
+"""
 
-right_format = """$cmd_duration $time"""
+right_format = """
+$c\
+$cmake\
+$golang\
+$java\
+$kotlin\
+$lua\
+$nodejs\
+$ocaml\
+$php\
+$python\
+$rust\
+$zig\
+$helm\
+$terraform\
+$bun\
+$cmd_duration $time
+"""
 
 [character]
 success_symbol = '[➜](bold green)'
 error_symbol = '[➜](bold red)'
 
+[directory]
+style = "bold purple"
+
 [gcloud]
 disabled = true
 
 [time]
-format = "[$time]($style)"
-time_format = "%R"
-style = "blue dimmed"
 disabled = false
+format = "[$time]($style)"
+time_format = "%T"
+style = "purple dimmed"
 
 [git_branch]
-format = "[$symbol$branch(:$remote_branch)]($style) "
+symbol = ""
+format = "[$symbol $branch(:$remote_branch)]($style) "
+style = "bold cyan"
 
 [cmd_duration]
 format = "[$duration]($style)"
 min_time = 0
 show_milliseconds = true
 style = "yellow dimmed"
+
+[c]
+symbol = " "
+format = "[$symbol]($style)"
+style = "fg:#555555"
+
+[cmake]
+symbol = " "
+format = "[$symbol]($style)"
+style = "fg:#6d4c41"
+
+[golang]
+symbol = " "
+format = "[$symbol]($style)"
+style = "fg:#00ADD8"
+
+[java]
+symbol = " "
+format = "[$symbol]($style)"
+style = "fg:#b07219"
+
+[kotlin]
+symbol = " "
+format = "[$symbol]($style)"
+style = "fg:#A97BFF"
+
+[lua]
+symbol = " "
+format = "[$symbol]($style)"
+style = "fg:#000080"
+
+[nodejs]
+symbol = " "
+format = "[$symbol]($style)"
+style = "fg:#3C873A"
+
+[ocaml]
+symbol = " "
+format = "[$symbol]($style)"
+style = "fg:#3be133"
+
+[php]
+symbol = " "
+format = "[$symbol]($style)"
+style = "fg:#777bb3"
+
+[python]
+symbol = " "
+format = "[$symbol]($style)"
+style = "fg:#3572A5"
+
+[rust]
+symbol = " "
+format = "[$symbol]($style)"
+style = "fg:#d34516"
+
+[bun]
+symbol = " "
+format = "[$symbol]($style)"
+style = "fg:#fbf0df"
+
+[zig]
+symbol = " "
+format = "[$symbol]($style)"
+style = "fg:#f7a41b"
+
+[helm]
+symbol = "⎈ "
+format = "[$symbol]($style)"
+style = "fg:#0f87cc"
+
+[terraform]
+symbol = " "
+format = "[$symbol]($style)"
+style = "fg:#6f42c1"
