@@ -60,74 +60,75 @@ style = "yellow dimmed"
 [c]
 symbol = " "
 format = "[$symbol]($style)"
-style = "fg:#555555"
+style = "dimmed"
 
 [cmake]
 symbol = " "
 format = "[$symbol]($style)"
-style = "fg:#6d4c41"
+style = "dimmed"
 
 [golang]
 symbol = " "
 format = "[$symbol]($style)"
-style = "fg:#00ADD8"
+style = "dimmed"
 
 [java]
 symbol = " "
 format = "[$symbol]($style)"
-style = "fg:#b07219"
+style = "dimmed"
 
 [kotlin]
 symbol = " "
 format = "[$symbol]($style)"
-style = "fg:#A97BFF"
+style = "dimmed"
 
 [lua]
 symbol = " "
 format = "[$symbol]($style)"
-style = "fg:#000080"
+style = "dimmed"
 
 [nodejs]
 symbol = " "
 format = "[$symbol]($style)"
-style = "fg:#3C873A"
+style = "dimmed"
 
 [ocaml]
 symbol = " "
 format = "[$symbol]($style)"
-style = "fg:#3be133"
+style = "dimmed"
 
 [php]
 symbol = " "
 format = "[$symbol]($style)"
-style = "fg:#777bb3"
+style = "dimmed"
 
 [python]
 symbol = " "
 format = "[$symbol]($style)"
-style = "fg:#3572A5"
+style = "dimmed"
 
 [rust]
 symbol = " "
 format = "[$symbol]($style)"
-style = "fg:#d34516"
+style = "dimmed"
 
 [bun]
 symbol = " "
 format = "[$symbol]($style)"
-style = "fg:#fbf0df"
+style = "dimmed"
 
 [zig]
 symbol = " "
 format = "[$symbol]($style)"
-style = "fg:#f7a41b"
+style = "dimmed"
 
 [helm]
 symbol = "⎈ "
 format = "[$symbol]($style)"
-style = "fg:#0f87cc"
+style = "dimmed"
 
 [terraform]
 symbol = " "
 format = "[$symbol]($style)"
-style = "fg:#6f42c1"
+style = "dimmed"
+
