@@ -10,9 +10,7 @@ $git_status\
 $line_break\
 $character"""
 
-right_format = """
-$cmd_duration\
-"""
+right_format = """$cmd_duration $time"""
 
 [character]
 success_symbol = '[➜](bold green)'
@@ -20,3 +18,18 @@ error_symbol = '[➜](bold red)'
 
 [gcloud]
 disabled = true
+
+[time]
+format = "[$time]($style)"
+time_format = "%R"
+style = "blue dimmed"
+disabled = false
+
+[git_branch]
+format = "[$symbol$branch(:$remote_branch)]($style) "
+
+[cmd_duration]
+format = "[$duration]($style)"
+min_time = 0
+show_milliseconds = true
+style = "yellow dimmed"
