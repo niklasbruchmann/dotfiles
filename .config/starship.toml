@@ -12,6 +12,7 @@ $character
 """
 
 right_format = """
+$cmd_duration\
 $c\
 $cmake\
 $golang\
@@ -27,7 +28,7 @@ $zig\
 $helm\
 $terraform\
 $bun\
-$cmd_duration $time
+$time
 """
 
 [character]
@@ -52,7 +53,7 @@ format = "[$symbol $branch(:$remote_branch)]($style) "
 style = "bold cyan"
 
 [cmd_duration]
-format = "[$duration]($style)"
+format = "[$duration]($style) "
 min_time = 0
 show_milliseconds = true
 style = "yellow dimmed"
