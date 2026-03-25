@@ -18,13 +18,14 @@ macOS (Homebrew):
 ```sh
 brew install stow neovim starship zsh-syntax-highlighting
 brew tap homebrew/cask-fonts
+brew install --cask ghostty
 brew install --cask font-blex-mono-nerd-font
 ```
 
 Arch (pacman & yay):
 
 ```sh
-sudo pacman -S --needed stow neovim starship zsh
+sudo pacman -S --needed stow neovim starship zsh ghostty
 yay -S --needed ttf-blex-nerd-font
 ```
 
@@ -34,6 +35,8 @@ Debian (apt):
 sudo apt update
 sudo apt install -y stow zsh neovim starship
 ```
+
+Ghostty is not typically available via apt; install it separately if you want to use the Ghostty config.
 
 ### Neovim (Kickstart.nvim) deps
 
