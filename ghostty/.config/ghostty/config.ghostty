@@ -9,7 +9,7 @@ keybind = ctrl+l=goto_split:right
 keybind = cmd+shift+n=new_tab
 keybind = cmd+shift+h=previous_tab
 keybind = cmd+shift+l=next_tab
-theme = tokyonight
+theme = TokyoNight
 font-family = "BlexMono Nerd Font"
 window-inherit-working-directory = true
 working-directory = inherit
