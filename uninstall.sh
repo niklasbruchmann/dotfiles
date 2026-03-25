@@ -8,7 +8,7 @@ for d in */; do
   packages="$packages $d"
 done
 
-echo "stowing packages: $packages"
+echo "unstowing packages: $packages"
 
 # shellcheck disable=SC2086
 stow -D -t "$HOME" $packages
