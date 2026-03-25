@@ -21,11 +21,18 @@ brew tap homebrew/cask-fonts
 brew install --cask font-blex-mono-nerd-font
 ```
 
-Arch:
+Arch (pacman & yay):
 
 ```sh
 sudo pacman -S --needed stow neovim starship zsh
 yay -S --needed ttf-blex-nerd-font
+```
+
+Debian (apt):
+
+```sh
+sudo apt update
+sudo apt install -y stow zsh neovim starship
 ```
 
 ### Neovim (Kickstart.nvim) deps
@@ -42,10 +49,17 @@ macOS (Homebrew):
 brew install ripgrep fd tree-sitter make
 ```
 
-Arch:
+Arch (pacman):
 
 ```sh
 sudo pacman -S --needed ripgrep fd tree-sitter make gcc unzip
+```
+
+Debian(apt):
+
+```sh
+sudo apt update
+sudo apt install -y git make unzip gcc ripgrep fd-find tree-sitter-cli xclip
 ```
 
 ## Install
