@@ -18,3 +18,4 @@ alias docker="podman"
 if [ "$(uname)" = "Darwin" ]; then
     alias prod='export AWS_PROFILE=production-poweruser && aws sso login --profile production-poweruser && aws eks update-kubeconfig --name production --region eu-central-1 --profile production-poweruser'
 fi
+

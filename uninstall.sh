@@ -11,4 +11,4 @@ done
 echo "stowing packages: $packages"
 
 # shellcheck disable=SC2086
-stow -R -t "$HOME" $packages
+stow -D -t "$HOME" $packages
