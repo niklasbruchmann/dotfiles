@@ -9,8 +9,12 @@ alias gl="git pull"
 alias gp="git push"
 alias gf="git fetch"
 alias gco="git checkout"
+alias gcm="git checkout \$(git symbolic-ref refs/remotes/origin/HEAD | cut -d'/' -f4)"
 alias l="ls -alh --color=auto"
 alias cr="cargo run"
 alias cw="cargo watch -x run"
 alias docker="podman"
-alias prod='export AWS_PROFILE=production-poweruser && aws sso login --profile production-poweruser && aws eks update-kubeconfig --name production --region eu-central-1 --profile production-poweruser'
+
+if [ "$(uname)" = "Darwin" ]; then
+    alias prod='export AWS_PROFILE=production-poweruser && aws sso login --profile production-poweruser && aws eks update-kubeconfig --name production --region eu-central-1 --profile production-poweruser'
+fi

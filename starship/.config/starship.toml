@@ -1,8 +1,6 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-$username\
-$hostname\
 $directory\
 $git_branch\
 $git_state\
@@ -28,6 +26,7 @@ $zig\
 $helm\
 $terraform\
 $bun\
+$aws\
 $time
 """
 
@@ -133,3 +132,7 @@ symbol = " "
 format = "[$symbol]($style)"
 style = "dimmed"
 
+[aws]
+symbol = " "
+format = "[$symbol]($style)"
+style = "dimmed"
