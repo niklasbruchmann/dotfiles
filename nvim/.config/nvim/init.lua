@@ -164,6 +164,17 @@ vim.o.scrolloff = 10
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
+-- Force 4-space indentation (no tabs) for TS/Svelte files.
+vim.api.nvim_create_autocmd('FileType', {
+    pattern = { 'typescript', 'typescriptreact', 'svelte' },
+    callback = function()
+        vim.opt_local.expandtab = true
+        vim.opt_local.tabstop = 4
+        vim.opt_local.softtabstop = 4
+        vim.opt_local.shiftwidth = 4
+    end,
+})
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -614,6 +625,8 @@ require('lazy').setup({
                 --
                 -- But for many setups, the LSP (`ts_ls`) will work just fine
                 ts_ls = {},
+                svelte = {},
+                tailwindcss = {},
 
                 stylua = {}, -- Used to format Lua code
 
