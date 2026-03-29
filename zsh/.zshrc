@@ -14,6 +14,12 @@ if [ -d "$HOME/.bun/bin" ]; then
   export PATH="$HOME/.bun/bin:$PATH"
 fi
 
+if [ -d "$HOME/.cargo/bin" ]; then
+  export PATH="$HOME/.cargo/bin:$PATH"
+fi
+
+export PATH="$HOME/.local/share/nvim/site:$PATH"
+
 # aliases
 alias gst="git status"
 alias ga="git add"
