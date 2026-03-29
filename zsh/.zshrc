@@ -10,6 +10,10 @@ source ~/.config/zsh-autosuggestions.zsh
 
 export CARGO_NET_GIT_FETCH_WITH_CLI=true
 
+if [ -d "$HOME/.bun/bin" ]; then
+  export PATH="$HOME/.bun/bin:$PATH"
+fi
+
 # aliases
 alias gst="git status"
 alias ga="git add"
