@@ -7,6 +7,7 @@ else
     eval $(keychain -q --eval ~/.ssh/github)
 fi
 
+eval "$(ssh-agent -s)"
 eval "$(starship init zsh)"
 source ~/.config/zsh-autosuggestions.zsh
 
@@ -41,3 +42,11 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 
+
+# pnpm
+export PNPM_HOME="/Users/niklas/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
