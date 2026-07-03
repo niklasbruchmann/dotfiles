@@ -36,7 +36,6 @@ alias gcm="git checkout \$(git symbolic-ref refs/remotes/origin/HEAD | cut -d'/'
 alias l="ls -alh --color=auto"
 alias cr="cargo run"
 alias cw="cargo watch -x run"
-alias docker="podman"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
