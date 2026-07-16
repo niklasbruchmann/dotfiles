@@ -4,6 +4,9 @@ if [ "$(uname)" = "Darwin" ]; then
     source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
     alias prod='export AWS_PROFILE=production-poweruser && aws sso login --profile production-poweruser && aws eks update-kubeconfig --name production --region eu-central-1 --profile production-poweruser'
     alias newprod='export AWS_PROFILE=production-poweruser-26 && aws sso login --profile production-poweruser-26 && aws eks update-kubeconfig --name production --region eu-central-1 --profile production-poweruser-26'
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+    [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 else
     eval $(keychain -q --eval ~/.ssh/github)
 fi
