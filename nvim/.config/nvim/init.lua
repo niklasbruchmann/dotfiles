@@ -618,7 +618,11 @@ require('lazy').setup({
                 -- clangd = {},
                 -- gopls = {},
                 -- pyright = {},
-                rust_analyzer = {},
+                rust_analyzer = {
+                    cargo = {
+                        allFeatures = true,
+                    },
+                },
                 --
                 -- Some languages (like typescript) have entire language plugins that can be useful:
                 --    https://github.com/pmizio/typescript-tools.nvim

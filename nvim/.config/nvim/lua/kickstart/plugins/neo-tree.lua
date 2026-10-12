@@ -20,6 +20,8 @@ return {
     ---@type neotree.Config
     opts = {
         filesystem = {
+            -- Enable automatic updates on file save/change
+            use_libuv_file_watcher = true,
             filtered_items = {
                 hide_dotfiles = false,
             },
