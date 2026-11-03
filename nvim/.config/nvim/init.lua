@@ -630,7 +630,26 @@ require('lazy').setup({
                 -- But for many setups, the LSP (`ts_ls`) will work just fine
                 ts_ls = {},
                 svelte = {},
-                tailwindcss = {},
+                tailwindcss = {
+                    filetypes = {
+                        'html',
+                        'css',
+                        'scss',
+                        'javascript',
+                        'javascriptreact',
+                        'typescript',
+                        'typescriptreact',
+                        'vue',
+                        'svelte',
+                        'rust',
+                    },
+
+                    init_options = {
+                        userLanguages = {
+                            rust = 'html',
+                        },
+                    },
+                },
 
                 stylua = {}, -- Used to format Lua code
 
