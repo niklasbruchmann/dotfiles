@@ -10,6 +10,7 @@ keybind = cmd+shift+n=new_tab
 keybind = cmd+shift+h=previous_tab
 keybind = cmd+shift+l=next_tab
 theme = TokyoNight
+background = #000000
 font-family = "BlexMono Nerd Font"
 window-inherit-working-directory = true
 working-directory = inherit

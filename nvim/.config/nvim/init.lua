@@ -860,6 +860,18 @@ require('lazy').setup({
             -- Like many other themes, this one has different styles, and you could load
             -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
             vim.cmd.colorscheme 'tokyonight-night'
+
+            -- Override bg to match Ghostty
+            local function set_bg()
+                vim.api.nvim_set_hl(0, 'Normal', { bg = '#000000' })
+                vim.api.nvim_set_hl(0, 'NormalNC', { bg = '#000000' })
+                vim.api.nvim_set_hl(0, 'NormalFloat', { bg = '#000000' })
+                vim.api.nvim_set_hl(0, 'EndOfBuffer', { bg = '#000000' })
+                vim.api.nvim_set_hl(0, 'NeoTreeNormal', { bg = '#000000' })
+                vim.api.nvim_set_hl(0, 'NeoTreeNormalNC', { bg = '#000000' })
+            end
+            set_bg()
+            vim.api.nvim_create_autocmd('ColorScheme', { callback = set_bg })
         end,
     },
 
